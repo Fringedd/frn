@@ -1,0 +1,161 @@
+body{
+    font-size:15px;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:7rem;
+}
+
+p,h2,h3,h4{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width:1300px;
+    height: 400px;
+    background-color:hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.left {
+    padding: 2rem;
+    width:50%;
+}
+
+.left h2{
+    color:hsl(0, 0%, 100%);
+    font-family: ;
+}
+
+.left p{
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+   font-size:14px;
+}
+
+.bot h4{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:1.5rem;
+}
+
+.right{
+    width: 50%;
+    height: 400px;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.layer{
+        background-color: hsl(277, 64%, 61%);
+        opacity: 0.65;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius:  10px;
+}
+
+
+.bot{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 20%;
+    padding-left: 0;
+}
+
+.bot li{
+    margin-top:auto;
+}
+
+.containit{
+    width:350px;
+    padding-left:2rem;
+    padding-top:2rem;
+}
+
+.containit h2{
+    font-size:2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.containit span{
+    color: hsl(277, 64%, 61%);
+}
+
+
+.right2{
+    max-width:100%;
+}
+
+@media only screen and (max-width: 375px) {
+   .container {
+      display: flex;
+      flex-direction: column-reverse;
+      height:700px;
+      width: 300px;
+      font-size:15px;
+      align-items: center;
+      text-align: center;
+
+
+    }
+    .right{
+        width:100%;
+        height: 35%;
+    }
+
+    .right2{
+        width:100%;
+    }
+    .left .containit{
+        width:100%;
+        padding:0rem;
+        width:225px;
+        text-align: center;
+
+    }
+
+    .containit h2{
+        font-size:1.5rem;
+        width:100%;
+    }
+
+    .containit p{
+        width: 100%;
+        font-size:13px;
+    }
+    
+    .bot{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        margin-top:5%;
+        width:100%;
+    }
+    .contain{
+        width:100%;
+        height: 300px;
+    }
+    .left{
+        width:100%;
+        height: 60%;
+        padding:1rem;
+    }
+    .bot li{
+        margin-top:10%;
+    }
+  }
